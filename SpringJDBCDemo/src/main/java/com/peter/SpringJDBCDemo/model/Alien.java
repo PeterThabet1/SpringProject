@@ -1,5 +1,10 @@
-package SPRINGPROJECT.SpringJDBCDemo.src.main.java.com.peter.SpringJDBCDemo.model;
+package com.peter.SpringJDBCDemo.model;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+@Component
+@Scope("prototype")
 public class Alien {
 
     private int id;
@@ -33,11 +38,10 @@ public class Alien {
 
     @Override
     public String toString() {
-        return "{" +
-            " id='" + getId() + "'" +
-            ", name='" + getName() + "'" +
-            ", tech='" + getTech() + "'" +
-            "}";
+        return "Alien{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", tech='" + tech + '\'' +
+                '}';
     }
-
 }
