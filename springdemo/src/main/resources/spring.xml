@@ -4,7 +4,7 @@
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="alien" class="com.peter.Alien">
+    <bean id="alien" class="com.peter.Alien" autowire="default">
         <property name="age" value="10"></property>
         <property name="Laptop" ref="Laptop"></property>
     </bean>

@@ -11,7 +11,7 @@ public class App
         // BeanFactory factory = new XmlBeanFactory(new FileSystemResource("springdemo/spring.xml"));
 
 
-        ApplicationContext factory = new ClassPathXmlApplicationContext("com/peter/spring.xml");
+        ApplicationContext factory = new ClassPathXmlApplicationContext("spring.xml");
 
         Alien obj1 = (Alien) factory.getBean("alien");
         obj1.code();
